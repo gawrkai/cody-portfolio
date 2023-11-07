@@ -9,7 +9,7 @@ function Type() {
           "PHP/Laravel Developer",
           "Smart Contract Auditor",
           "Python Developer",
-          // "MERN Stack Developer",
+          "MEAN/MERN Stack Developer",
         ],
         autoStart: true,
         loop: true,
