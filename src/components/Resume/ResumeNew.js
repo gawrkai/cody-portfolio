@@ -22,7 +22,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            // href={pdf}
+            href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -33,7 +33,7 @@ function ResumeNew() {
 
         <Row className="resume">
           <Document 
-            // file={pdf} 
+            file={pdf} 
             className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
@@ -42,7 +42,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            // href={pdf}
+            href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >

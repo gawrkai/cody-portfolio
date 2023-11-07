@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
-  DiReact,
+  DiAngularSimple,
   DiNodejs,
   DiMongodb,
   DiPython,
@@ -16,6 +16,7 @@ import {
   SiExpress,
   SiRedis,
   SiFirebase,
+  SiMysql,
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
@@ -41,16 +42,19 @@ function Techstack() {
         <SiExpress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiAngularSimple />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
@@ -60,9 +64,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
