@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/gawr.jpg";
+import myImg from "../../Assets/angular-dev.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,37 +19,36 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I accidentally fell in love with{" "}
+              <b className="purple">programming</b> and now I can’t turn it off.
               <br />
-              <br />I am fluent in advanced techniques like
+              <br />
+              I’ve definitely learned a thing or two — or at least enough to
+              Google like a pro. 🤷‍♂️💻 I speak fluent{" "}
               <i>
-                <b className="purple"> Laravel, Python and Solidity. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+                <b className="purple">Angular,</b>
+
+                <b className="purple">Laravel,</b>
+              </i>{" "}
+              and just enough{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also {" "}
-                <b className="purple">
-                  Smart Contract Audit.
-                </b>
-              </i>
+                <b className="purple">Solidity</b>
+              </i>{" "}
+              to break things before I fix them.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              My favorite side quests? 🚀 Building cool web stuff, exploring
+              smart contracts, and pretending console.log is a debugging
+              strategy. Whenever I get the chance, I dive into crafting slick
+              apps with{" "}
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
+                <b className="purple">Angular, Laravel,</b>
+              </i>{" "}
+              and modern JS sidekicks like{" "}
               <i>
-                <b className="purple"> React.js, Vue.js and Angular.js</b>
-              </i>
+                <b className="purple">React and Vue</b>
+              </i>{" "}
+              — because who needs sleep when there are frameworks to learn?
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -87,7 +86,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/haiyang-yu-27233b214/"
+                  href="https://www.linkedin.com/in/Cody-Js-27233b214/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +96,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/haiyang-yu-27233b214"
+                  href="https://www.instagram.com/Cody-Js-27233b214"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

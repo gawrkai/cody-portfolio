@@ -8,30 +8,36 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Haiyang Yu </span>
-            from <span className="purple"> Beijing, China.</span>
+            Hey there!, I am <span className="purple">Cody Js </span>
+            from coming to you live from a{" "}
+            <span className="purple">timezone</span> where coffee is always
+            right answer.
             <br />
-            Additionally, I am currently employed as an individual software developear.
+            These days, I’m flying solo as a software developer — indie mode
+            activated, caffeine-powered, and code-driven.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            When I’m not wrangling code, you’ll find me:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              🎮 Gaming — from epic quests to pixel-perfect battles
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              ✍️ Writing tech blogs — sharing bugs, breakthroughs, and the
+              occasional "aha!" moment
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              ✈️ Traveling — because new places are like new frameworks:
+              exciting, occasionally buggy, but always worth exploring
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Striving to write meaningful code (and sip meaningful coffee) that
+            makes the world a little better, byte by byte."{" "}
           </p>
-          <footer className="blockquote-footer">Haiyang Yu</footer>
+          <footer className="blockquote-footer">Cody Js</footer>
         </blockquote>
       </Card.Body>
     </Card>

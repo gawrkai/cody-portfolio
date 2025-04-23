@@ -14,10 +14,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Haiyang Yu</h3>
+          <h3>Designed and Developed by Cody Js</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Haiyang</h3>
+          <h3>Copyright © {year} Cody</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -25,7 +25,7 @@ function Footer() {
               <a
                 href="https://github.com/cody-gawr"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +35,7 @@ function Footer() {
               <a
                 href="https://twitter.com/Cody81568480854"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
@@ -43,9 +43,9 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/haiyang-yu-27233b214/"
+                href="https://www.linkedin.com/in/Cody-Js-27233b214/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -55,7 +55,7 @@ function Footer() {
               <a
                 href="#"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
