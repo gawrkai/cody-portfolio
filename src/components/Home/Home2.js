@@ -75,34 +75,37 @@ function Home2() {
                 </a>
               </li>
               <li className="social-icons">
-                <a
+                <AiOutlineTwitter />
+                {/* <a
                   href="https://twitter.com/Cody81568480854"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiOutlineTwitter />
-                </a>
+                </a> */}
               </li>
               <li className="social-icons">
-                <a
+                <FaLinkedinIn />
+                {/* <a
                   href="https://www.linkedin.com/in/Cody-Js-27233b214/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
+                </a> */}
               </li>
               <li className="social-icons">
-                <a
+                <AiFillInstagram />
+                {/* <a
                   href="https://www.instagram.com/Cody-Js-27233b214"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
-                </a>
+                </a> */}
               </li>
             </ul>
           </Col>

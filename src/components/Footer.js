@@ -32,34 +32,54 @@ function Footer() {
               </a>
             </li>
             <li className="social-icons">
-              <a
+              <button
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "white",
+                  cursor: "pointer",
+                  padding: 0,
+                }}
+                onClick={() => alert("Twitter link not available")}
+              >
+                <AiOutlineTwitter />
+              </button>
+              {/* <a
                 href="https://twitter.com/Cody81568480854"
                 style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
-              </a>
+              </a> */}
             </li>
             <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/Cody-Js-27233b214/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "white",
+                  cursor: "pointer",
+                  padding: 0,
+                }}
+                onClick={() => alert("Linkedin link not available")}
               >
                 <FaLinkedinIn />
-              </a>
+              </button>
             </li>
             <li className="social-icons">
-              <a
-                href="#"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "white",
+                  cursor: "pointer",
+                  padding: 0,
+                }}
+                onClick={() => alert("Instagram link not available")}
               >
                 <AiFillInstagram />
-              </a>
+              </button>
             </li>
           </ul>
         </Col>
