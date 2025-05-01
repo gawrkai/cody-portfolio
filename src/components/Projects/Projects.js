@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
 import jeeveAnalytics from "../../Assets/Projects/jeeve-analytics.png";
+import jeeveMembers from "../../Assets/Projects/jeeve-members.webp";
+import jeevePay from "../../Assets/Projects/jeeve-pay.webp";
 import autobrain from "../../Assets/Projects/autobrain.jpg";
 import soundblock from "../../Assets/Projects/soundblock.jpg";
-import suicide from "../../Assets/Projects/suicide.png";
 import appEggFi from "../../Assets/Projects/app.egg.fi.png";
 
 function Projects() {
@@ -26,7 +26,7 @@ function Projects() {
               imgPath={soundblock}
               isBlog={false}
               title="Soundblock"
-              description="Soundblock is 21st Century rights management, administration built using web2/web3 infrastructure. Soundblock smartly distributes your music and merchandise to the most relevant platforms and on-demand storefronts while every audio stream, file download, and t-shirt sale is documented forever on the blockchain."
+              description="Built a modern, responsive UI in Angular to manage music and merchandise distribution across multiple platforms. Integrated Web3 APIs to log streams, downloads, and sales on the blockchain."
               demoLink="https://soundblock.com/"
             />
           </Col>
@@ -36,14 +36,14 @@ function Projects() {
               imgPath={appEggFi}
               isBlog={false}
               title="Egg DeFi Dashboard"
-              description="Egg DeFi Dashboard builds with Solidity, Node.js, Laravel, Vue.js. This dashboard allows the user to connect his multiple wallets and track all of them."
+              description="Egg DeFi Dashboard, built with Solidity, Node.js, Laravel, and Vue.js, lets users connect multiple wallets and track them all in one convenient place."
               demoLink="https://app.egg.fi/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={autobrain} 
+              imgPath={autobrain}
               isBlog={false}
               title="Autobrain"
               description="Autobrain OBDII offers full vehicle diagnostics and can even connect you to a trained auto specialist who can help."
@@ -54,12 +54,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={jeeveMembers}
               isBlog={false}
-              title="Eat That API"
-              description="This API offers all-in-one solution to search restaurants nearby a user, view menus and rate them, etc."
-              ghLink="https://github.com/cody-gawr/AI_For_Social_Good"
-              demoLink="http://137.184.208.22/docs"
+              title="Jeeve Members"
+              description="Jeeve Members enables clinics to create branded membership programs and flexible payment plans, helping reduce patient churn and foster long-term loyalty. The platform puts control back into the hands of dental practices, allowing them to grow their own patient community with ease."
+              ghLink=""
+              demoLink="https://www.jeeve.com.au/jeeve-members"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jeevePay}
+              isBlog={false}
+              title="Jeeve Pay"
+              description="Jeeve Pay streamlines the financial backend for dental clinics by integrating seamlessly with leading platforms such as Dental PMS, Xero, and Hicaps (Australia’s top merchant facilitator). This powerful web application automates billing, payouts, and reporting — giving dental practices more time to focus on patient care."
+              ghLink=""
+              demoLink="https://www.jeeve.com.au/jeeve-pay"
             />
           </Col>
 
@@ -67,10 +78,10 @@ function Projects() {
             <ProjectCard
               imgPath={jeeveAnalytics}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Jeeve Analytics builds with MEAN stack and works with your favourite practice management and accounting software to provide you with all the important information you need on how your practice is trending — right at your fingertips."
+              title="Jeeve Solution"
+              description="Jeeve Analytics delivers real-time insights into clinic performance by integrating with leading practice management and accounting tools. Designed to help dental professionals track trends, optimize operations, and make data-driven decisions — all from an intuitive dashboard."
               ghLink="https://www.youtube.com/watch?v=X65dyfNJAxI"
-              demoLink="https://www.jeeve.com.au/jeeve-analytics/"
+              demoLink="https://www.jeeve.com.au/jeeve-analytics"
             />
           </Col>
         </Row>
