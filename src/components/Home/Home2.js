@@ -86,7 +86,15 @@ function Home2() {
                 </a> */}
               </li>
               <li className="social-icons">
-                <FaLinkedinIn />
+                <a
+                  href="https://www.linkedin.com/in/lautaro-cordoba-3630172b8/"
+                  style={{ color: "white" }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
                 {/* <a
                   href="https://www.linkedin.com/in/Cody-Js-27233b214/"
                   target="_blank"

@@ -54,18 +54,14 @@ function Footer() {
               </a> */}
             </li>
             <li className="social-icons">
-              <button
-                style={{
-                  background: "none",
-                  border: "none",
-                  color: "white",
-                  cursor: "pointer",
-                  padding: 0,
-                }}
-                onClick={() => alert("Linkedin link not available")}
+              <a
+                href="https://www.linkedin.com/in/lautaro-cordoba-3630172b8/"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
-              </button>
+              </a>
             </li>
             <li className="social-icons">
               <button
