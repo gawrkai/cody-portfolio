@@ -1,8 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 5%;
+    --foreground: 40 20% 95%;
+
+    --card: 220 12% 9%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 220 12% 9%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 10% 14%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 220 10% 14%;
+    --muted-foreground: 220 8% 58%;
+
+    --accent: 160 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 10% 16%;
+    --input: 220 10% 16%;
+    --ring: 210 100% 56%;
+
+    --radius: 0.75rem;
+
+    --surface: 220 12% 9%;
+    --surface-hover: 220 10% 13%;
+    --warm-glow: 35 90% 55%;
+    --metric: 160 60% 45%;
+
+    --sidebar-background: 220 12% 7%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 210 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 12%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 220 10% 16%;
+    --sidebar-ring: 210 100% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-warm-glow {
+    color: hsl(var(--warm-glow));
+  }
+  .bg-warm-glow {
+    background-color: hsl(var(--warm-glow));
+  }
 }
