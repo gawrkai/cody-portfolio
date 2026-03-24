@@ -238,23 +238,144 @@ export const people: Person[] = [
       titleHighlight: "Thiago Gabry",
       titleAfter: "",
       subtitle:
-        "Professional summary and focus areas will go here once you share your resume and goals.",
-      tagline: "Details coming soon — tailored for Brazil.",
+        "Machine Learning Engineer with 4+ years shipping production AI in NLP, conversational AI, and multimodal computer vision. Strong in LLM-powered apps, neural machine translation, and real-time inference — with a focus on accessibility and sign language technologies.",
+      tagline:
+        "From dialogue understanding to pose and video: pragmatic ML that works in production, not just in notebooks.",
       openToWork: true,
     },
-    resumeUrl: "#",
-    projects: [...templateFeaturedProjects],
-    skillGroups: placeholderSkills,
-    howIWork: placeholderHowIWork,
-    experience: placeholderExperience("Thiago Gabry"),
+    resumeUrl: "/resumes/thiago-gabry.pdf",
+    projects: [
+      {
+        title: "Production conversational ML & inference",
+        metric: "Live APIs",
+        description:
+          "FastAPI and Python services deploying NLP models for conversational AI platforms — real-time inference, scalable backends, and close collaboration with backend engineers on high-throughput integrations.",
+        stack: ["FastAPI", "Python", "NLP", "Real-time inference"],
+        github: "#",
+      },
+      {
+        title: "NLP pipelines for dialogue systems",
+        metric: "End-to-end",
+        description:
+          "Tokenization, text normalization, and feature engineering on large conversational datasets; intent classification and NER for stronger understanding; LLM-driven workflows for contextual dialogue and automated responses.",
+        stack: ["Python", "NLP", "NER", "LLMs"],
+        github: "#",
+      },
+      {
+        title: "Sign language translation stack",
+        metric: "NMT + pose",
+        description:
+          "Text-to-gloss pipelines with spaCy; rule-based restructuring into sign language grammar; neural machine translation from text to gloss sequences; gloss-to-skeletal-pose generation with lexicons, smoothing, and motion processing.",
+        stack: ["PyTorch", "spaCy", "NMT", "Pose sequences"],
+        github: "#",
+      },
+      {
+        title: "Pose-to-video & gesture rendering",
+        metric: "Multimodal",
+        description:
+          "Pose dataset loaders and preprocessing from sign-language video; pose-to-video synthesis and animation pipelines; GAN-based models for more realistic gesture rendering and frame-level generation.",
+        stack: ["OpenCV", "GANs", "Video processing", "Python"],
+        github: "#",
+      },
+    ],
+    skillGroups: [
+      {
+        title: "ML & NLP",
+        skills: [
+          "Python",
+          "PyTorch",
+          "Scikit-learn",
+          "Deep learning",
+          "NLP pipelines",
+          "Neural machine translation",
+          "Text classification & NER",
+          "spaCy",
+          "Feature engineering",
+          "Model evaluation",
+          "Sign language translation systems",
+        ],
+      },
+      {
+        title: "Vision & gestures",
+        skills: [
+          "OpenCV",
+          "MediaPipe",
+          "Pose estimation",
+          "Gesture recognition",
+          "Video processing",
+          "GANs",
+          "Pose-to-video generation",
+        ],
+      },
+      {
+        title: "Engineering & deployment",
+        skills: ["FastAPI", "REST APIs", "Model deployment", "Real-time inference"],
+      },
+      {
+        title: "Data",
+        skills: ["SQL", "NumPy", "Pandas", "Data pipelines", "Dataset preprocessing"],
+      },
+    ],
+    howIWork: [
+      {
+        text: "Production over demos",
+        detail:
+          "I care about inference latency, monitoring, and behavior in real conversational systems — not only offline metrics.",
+      },
+      {
+        text: "Accessibility-minded ML",
+        detail:
+          "Sign language and multimodal work taught me to design pipelines that bridge text, structure, motion, and video.",
+      },
+      {
+        text: "Solid data foundations",
+        detail:
+          "Heavy emphasis on normalization, dataset prep, and evaluation so models stay understandable and maintainable.",
+      },
+      {
+        text: "Cross-functional integration",
+        detail:
+          "I work with backend engineers to plug ML into platforms that already serve real users and traffic.",
+      },
+    ],
+    experience: [
+      {
+        company: "Ordibl",
+        role: "Machine Learning Engineer",
+        dates: "May 2023 – Present",
+        bullets: [
+          "Shipped production ML inference services with FastAPI and Python for conversational AI platforms.",
+          "Built NLP pipelines for conversational data: tokenization, normalization, and feature engineering.",
+          "Trained and deployed models for intent classification and named-entity recognition.",
+          "Implemented LLM-driven workflows for contextual dialogue and automated response generation.",
+          "Designed data processing pipelines for large conversational datasets used in training.",
+          "Built monitoring for model accuracy, API performance, and inference latency in production.",
+          "Optimized backend ML infrastructure for real-time inference and scalable deployment alongside platform engineers.",
+        ],
+      },
+      {
+        company: "Xetlink Technology",
+        role: "Machine Learning Engineer (Junior)",
+        dates: "Oct 2020 – Apr 2023",
+        bullets: [
+          "Text-to-gloss translation with spaCy — tokenization, lemmatization, and grammar-aware rules.",
+          "Rule-based NLP to reshape natural language into sign-language grammar structures.",
+          "Neural machine translation from text sentences to sign language gloss sequences.",
+          "Gloss-to-skeletal-pose systems using lexicons and pose datasets; smoothing and transition handling.",
+          "Dataset loaders and preprocessing for pose data from sign-language video.",
+          "Pose-to-video synthesis and animation pipelines; GAN-based models for realistic gesture rendering.",
+        ],
+      },
+    ],
     contact: {
       heading: "Let's Talk",
-      intro: "Contact links and copy will be updated when you provide them.",
-      tagline: "Open to opportunities in Brazil and remotely.",
-      email: "hello@example.com",
-      linkedin: "#",
+      intro:
+        "Open to roles in NLP, conversational AI, multimodal ML, and accessibility-focused products — Brazil and remote. B.Sc. in Machine Learning (IFF / UFF, Santo Antônio de Pádua, 2014–2020).",
+      tagline: "Rio de Janeiro, Brazil · +55 22 99243-2692",
+      email: "tgabry.datascience@outlook.com",
+      linkedin: "https://www.linkedin.com/in/thiago-da-silva-gabry-05456139b/",
       github: "#",
-      exploring: ["Your interests"],
+      exploring: ["Conversational AI", "LLM applications", "Sign language tech", "Real-time ML"],
     },
   },
   {
