@@ -1,27 +1,36 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePerson } from "@/context/PersonContext";
 
 const links = [
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "How I Work", href: "#approach" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: "Projects", hash: "projects" },
+  { label: "Skills", hash: "skills" },
+  { label: "How I Work", hash: "approach" },
+  { label: "Experience", hash: "experience" },
+  { label: "Contact", hash: "contact" },
+] as const;
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const person = usePerson();
+  const base = `/${person.slug}`;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        <a href="#" className="font-bold text-lg tracking-tight">
-          <span className="text-warm-glow">{"{"}</span>ML<span className="text-warm-glow">{"}"}</span>
+        <a href={base} className="font-bold text-lg tracking-tight">
+          <span className="text-warm-glow">{"{"}</span>
+          {person.navLabel}
+          <span className="text-warm-glow">{"}"}</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200">
+            <a
+              key={l.hash}
+              href={`${base}#${l.hash}`}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
               {l.label}
             </a>
           ))}
@@ -35,7 +44,12 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden border-t border-border bg-background px-6 py-4 space-y-3">
           {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              key={l.hash}
+              href={`${base}#${l.hash}`}
+              onClick={() => setOpen(false)}
+              className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               {l.label}
             </a>
           ))}

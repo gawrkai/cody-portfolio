@@ -49,6 +49,84 @@
     --sidebar-accent-foreground: 40 20% 95%;
     --sidebar-border: 220 10% 16%;
     --sidebar-ring: 210 100% 56%;
+
+    /* Hero gradient (default / ice-blue) */
+    --hero-orb-1: 35 90% 55%;
+    --hero-orb-2: 210 100% 56%;
+  }
+
+  /* Canada: maple red + cool ice blues, crisp contrast */
+  [data-theme="canada"] {
+    --background: 222 28% 6%;
+    --foreground: 40 25% 96%;
+    --card: 222 22% 10%;
+    --card-foreground: 40 25% 96%;
+    --popover: 222 22% 10%;
+    --popover-foreground: 40 25% 96%;
+    --primary: 355 78% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 16% 14%;
+    --secondary-foreground: 40 25% 96%;
+    --muted: 222 14% 16%;
+    --muted-foreground: 220 12% 62%;
+    --accent: 210 85% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 14% 18%;
+    --input: 222 14% 18%;
+    --ring: 355 78% 52%;
+    --surface: 222 22% 10%;
+    --surface-hover: 222 16% 14%;
+    --warm-glow: 210 92% 62%;
+    --metric: 200 70% 48%;
+    --sidebar-background: 222 26% 7%;
+    --sidebar-foreground: 40 25% 96%;
+    --sidebar-primary: 355 78% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 14% 12%;
+    --sidebar-accent-foreground: 40 25% 96%;
+    --sidebar-border: 222 14% 18%;
+    --sidebar-ring: 355 78% 52%;
+    --hero-orb-1: 355 72% 48%;
+    --hero-orb-2: 210 85% 52%;
+  }
+
+  /* Brazil: flag-inspired green + gold warmth, blue accents */
+  [data-theme="brazil"] {
+    --background: 152 32% 6%;
+    --foreground: 48 40% 96%;
+    --card: 152 24% 9%;
+    --card-foreground: 48 40% 96%;
+    --popover: 152 24% 9%;
+    --popover-foreground: 48 40% 96%;
+    --primary: 152 62% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 152 18% 14%;
+    --secondary-foreground: 48 40% 96%;
+    --muted: 152 16% 14%;
+    --muted-foreground: 152 12% 58%;
+    --accent: 215 88% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 152 18% 16%;
+    --input: 152 18% 16%;
+    --ring: 152 62% 40%;
+    --surface: 152 24% 9%;
+    --surface-hover: 152 18% 13%;
+    --warm-glow: 48 100% 50%;
+    --metric: 215 85% 52%;
+    --sidebar-background: 152 30% 7%;
+    --sidebar-foreground: 48 40% 96%;
+    --sidebar-primary: 152 62% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 152 16% 12%;
+    --sidebar-accent-foreground: 48 40% 96%;
+    --sidebar-border: 152 18% 16%;
+    --sidebar-ring: 152 62% 40%;
+    --hero-orb-1: 152 65% 36%;
+    --hero-orb-2: 48 96% 48%;
   }
 }
 
