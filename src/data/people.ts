@@ -1,59 +1,5 @@
 import type { Person } from "@/types/person";
 
-/** Showcase cards until individual resumes / links are provided */
-const templateFeaturedProjects: Person["projects"] = [
-  {
-    title: "Conversational AI System",
-    metric: "+20% accuracy",
-    description:
-      "NLP pipeline for real-time intent classification using transformer models and LLM workflows, integrated with FastAPI for sub-200ms responses — handling high daily conversation volume and reducing support load.",
-    stack: ["PyTorch", "Transformers", "FastAPI", "Redis", "Docker"],
-    github: "#",
-  },
-  {
-    title: "Real-Time ML Inference API",
-    metric: "40% faster inference",
-    description:
-      "Inference stack rebuilt with ONNX Runtime and async batching, deployed on Kubernetes with auto-scaling — lower p99 latency at high request rates.",
-    stack: ["FastAPI", "ONNX Runtime", "Kubernetes", "Prometheus", "Python"],
-    github: "#",
-  },
-  {
-    title: "Multimodal Content Moderation",
-    metric: "High precision",
-    description:
-      "Combined vision and text signals with embeddings and custom classifiers, plus active learning so the system keeps improving in production.",
-    stack: ["PyTorch", "CLIP", "PostgreSQL", "S3"],
-    github: "#",
-  },
-  {
-    title: "ML Feature Pipeline & Training Platform",
-    metric: "Faster iterations",
-    description:
-      "Automated ETL with validation, feature workflows, and experiment tracking so the team spends less time on plumbing and more time on models.",
-    stack: ["Apache Airflow", "Spark", "MLflow", "Delta Lake", "GCP"],
-    github: "#",
-  },
-];
-
-const placeholderExperience = (name: string): Person["experience"] => [
-  {
-    company: "TBD",
-    role: "Your role",
-    dates: "—",
-    bullets: [
-      `${name.split(" ")[0]} — add your work experience, dates, and impact bullets here.`,
-    ],
-  },
-];
-
-const placeholderSkills: Person["skillGroups"] = [
-  { title: "Core", skills: ["Add your skills in src/data/people.ts"] },
-  { title: "Stack", skills: ["—"] },
-  { title: "Tools", skills: ["—"] },
-  { title: "More", skills: ["—"] },
-];
-
 const placeholderHowIWork: Person["howIWork"] = [
   {
     text: "Your approach",
@@ -390,23 +336,122 @@ export const people: Person[] = [
       titleHighlight: "Gustavo Gabry",
       titleAfter: "",
       subtitle:
-        "Professional summary and focus areas will go here once you share your resume and goals.",
-      tagline: "Details coming soon — tailored for Brazil.",
+        "AI / ML engineer focused on conversational systems: FastAPI inference services, NLP pipelines, and LLM-backed dialogue — with strong interest in evaluation, reliable deployment, and real-time ML at scale.",
+      tagline:
+        "Building assistants and backends that stay measurable in production: latency, throughput, and prediction quality.",
       openToWork: true,
     },
-    resumeUrl: "#",
-    projects: [...templateFeaturedProjects],
-    skillGroups: placeholderSkills,
-    howIWork: placeholderHowIWork,
-    experience: placeholderExperience("Gustavo Gabry"),
+    resumeUrl: "/resumes/gustavo-gabry.pdf",
+    projects: [
+      {
+        title: "LLM conversational assistant",
+        metric: "Ordibl",
+        description:
+          "Conversational AI using LLM APIs and NLP pipelines to automate support-style workflows. Semantic retrieval to ground responses and improve multi-turn handling. Related product: ordibl.ai.",
+        stack: ["LLM APIs", "Python", "NLP", "Retrieval"],
+        github: "#",
+      },
+      {
+        title: "NLP intent classification system",
+        metric: "Real-time APIs",
+        description:
+          "Intent classification over conversational text with full preprocessing and training workflows. Inference APIs integrated with backend services for live prediction in assistant flows.",
+        stack: ["Python", "NLP", "FastAPI", "Scikit-learn"],
+        github: "#",
+      },
+      {
+        title: "Production ML inference for conversational AI",
+        metric: "Live stack",
+        description:
+          "FastAPI services deploying NLP models for platforms ingesting user interaction data; preprocessing for tokenization, normalization, and feature engineering; NER and intent models wired into dialogue logic.",
+        stack: ["FastAPI", "Python", "NER", "Production ML"],
+        github: "#",
+      },
+      {
+        title: "Data pipelines & ML observability",
+        metric: "E2E quality",
+        description:
+          "Training and evaluation dataset pipelines; monitoring for accuracy, API latency, and inference throughput; testing model updates and validating behavior before and after release.",
+        stack: ["Python", "Pipelines", "Monitoring", "Docker"],
+        github: "#",
+      },
+    ],
+    skillGroups: [
+      {
+        title: "ML & NLP",
+        skills: [
+          "Python",
+          "PyTorch",
+          "Scikit-learn",
+          "Deep learning",
+          "Model evaluation",
+          "Feature engineering",
+          "NLP pipelines",
+          "spaCy",
+          "Text classification",
+          "NER",
+        ],
+      },
+      {
+        title: "Engineering & deployment",
+        skills: ["FastAPI", "REST APIs", "Model deployment", "Real-time inference"],
+      },
+      {
+        title: "Data",
+        skills: ["SQL", "NumPy", "Pandas", "Dataset preprocessing"],
+      },
+      {
+        title: "Platform",
+        skills: ["Git", "Docker", "Linux"],
+      },
+    ],
+    howIWork: [
+      {
+        text: "Measure what ships",
+        detail:
+          "I care about latency, throughput, and prediction quality in production — not only offline scores.",
+      },
+      {
+        text: "NLP with structure",
+        detail:
+          "Solid tokenization, normalization, and feature workflows so models and LLM layers stay maintainable.",
+      },
+      {
+        text: "Partner with product & backend",
+        detail:
+          "ML has to fit dialogue management, APIs, and automation tools the team actually runs day to day.",
+      },
+      {
+        text: "Validate before you scale",
+        detail:
+          "Testing updates, checking accuracy shifts, and confirming behavior in real conversational traffic.",
+      },
+    ],
+    experience: [
+      {
+        company: "Ordibl",
+        role: "Machine Learning Engineer",
+        dates: "Jan 2024 – Present",
+        bullets: [
+          "Production ML inference with FastAPI and Python, deploying NLP models for conversational AI on user interaction data.",
+          "Preprocessing pipelines for conversational datasets: tokenization, normalization, and feature engineering.",
+          "Intent classification and NER models to improve language understanding in assistants.",
+          "LLM-driven conversational workflows integrated with dialogue management for contextual responses.",
+          "Data pipelines for training and evaluation datasets; monitoring for model metrics, API latency, and inference throughput.",
+          "Optimized backend ML services for real-time inference and scalable deployment across conversational infrastructure.",
+          "Worked with backend and product teams to integrate ML into production platforms and automation tools; tested updates and validated production behavior.",
+        ],
+      },
+    ],
     contact: {
       heading: "Let's Talk",
-      intro: "Contact links and copy will be updated when you provide them.",
-      tagline: "Open to opportunities in Brazil and remotely.",
-      email: "hello@example.com",
-      linkedin: "#",
+      intro:
+        "Open to remote ML engineer roles with US and LATAM teams — NLP, LLM applications, and conversational AI. B.Sc. in Machine Learning, Estácio de Sá University (Jan 2023 – Jan 2026), Rio de Janeiro.",
+      tagline: "Rio de Janeiro, Brazil · +55 22 98119-4519",
+      email: "ggabry.ai@outlook.com",
+      linkedin: "https://www.linkedin.com/in/gustavo-gabry-1b0989253/",
       github: "#",
-      exploring: ["Your interests"],
+      exploring: ["LLM applications", "Conversational AI", "Real-time ML", "Scalable AI backends"],
     },
   },
 ];
